@@ -2,7 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {useState, useEffect} from "react";
-import logo from '../assets/img/logo.svg';
+import BCLogo from '../assets/img/BCLogoSmall.png';
+// import logo from '../assets/img/logo.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg';
 
 
@@ -35,7 +36,7 @@ const onUpdateActiveLink = (value) => {
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
             <Navbar.Brand href="#home">
-                    <img src={logo} alt="Logo"/>
+                    <img src={BCLogo} className="BCLogo" alt="Logo"/>
             </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -51,12 +52,15 @@ const onUpdateActiveLink = (value) => {
             </Nav>
             <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/bchan26/" target="_blank"><img src={navIcon1} alt=""/></a>
                 </div>
 
-                <button className="vvd" onClick={() => console.log('connect')}>
-                <span>Let's Connect</span>
+                <button className="contactButton" onClick={() =>
+                window.location = 'mailto:bchan26@bu.edu'}>
+                    BChan26@bu.edu
                 </button>
+
+
             </span>
         </Navbar.Collapse>
         </Container>

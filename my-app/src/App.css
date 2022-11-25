@@ -120,7 +120,7 @@ margin-left: 14px;
 }
 
 .social-icon a:hover img{
-  filter: brightness(0) saturate(100%) invert (0%) sepia (7%) hue-rotate(346deg) brightness(95%) contrast (86%)ß
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .navbar-text button {
@@ -154,6 +154,7 @@ margin-left: 14px;
 .navbar-text button:hover {
   color: #121212;
 }
+
 .navbar-text button:hover::before {
 content: "";
 width: 100%;

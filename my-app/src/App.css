@@ -16,12 +16,6 @@
 }
 
 /*Default Css*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
 scroll-behavior: smooth;
 scroll-padding-top: 5px;
@@ -216,13 +210,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*Banner*/
-.banner {
+.banner, .skills {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 140px 0px 80px 0px;
+  background-image: url('./assets/img/Boston.jpg');
+
+
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .banner h1 {
@@ -251,21 +248,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner img {
-  animation: leftright 4s linear infinite;
   border-radius: 25%;
   width: 50%;
   height: auto;
 }
 
+.banner #DBoat {
+  animation: leftright 5s linear infinite;
+  width: 50%;
+  height: auto;
+}
+
+
+
+#AllItems {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+
+}
+
+#languages, #frameworksAndLibraries, #tools {
+  max-width: 500px;
+  max-height: auto;
+}
+
+#languagesImages, #frameworksLibraries,#developerTools {
+  height: 30%;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  #AllItems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    max-width: 100%;
+      }
+
+  #languagesImages, #frameworksLibraries,#developerTools {
+    max-height: 30%;
+    max-width: 40%;
+  }
+  }
+
 @keyframes leftright {
   0% {
-    transform: translateX(-10px);
+    transform: translateX(-40px);
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(40px);
   }
   100% {
-    transform: translateX(-10px);
+    transform: translateX(-40px);
   }
 }
 
@@ -303,39 +339,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

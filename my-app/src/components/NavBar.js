@@ -1,20 +1,21 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
 import {useState, useEffect} from "react";
+
 import BCLogo from '../assets/img/BCLogoSmall.png';
-// import logo from '../assets/img/logo.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg';
 
 
 
 export const  NavBar = () =>  {
 
+//Event Listener for NavBar Link/Section To Jump To
 const [activeLink, setActiveLink] = useState('home');
 
-//if user has scrolled
+//UseState and Hook if user has scrolled
 const [scrolled, setScrolled] = useState(false);
-
 useEffect (() => {
     const onScroll = () => {
     if (window.scrollY > 50) {
@@ -35,34 +36,41 @@ const onUpdateActiveLink = (value) => {
     return (
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
+
+            {/* Logo */}
             <Navbar.Brand href="#home">
-                    <img src={BCLogo} className="BCLogo" alt="Logo"/>
+                    <img src={BCLogo} className="BCLogo" alt="BC Logo Template Created By Garis Pena from https://www.vecteezy.com/"/>
             </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon">
-            </span>
-        </Navbar.Toggle>
+            {/* NavBarToggle for Mobile*/}
+            <Navbar.Toggle aria-controls="basic-navbar-nav">
+                <span className="navbar-toggler-icon">
+                </span>
+            </Navbar.Toggle>
 
-        <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('skills')}> Skills </Nav.Link>
-                <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            </Nav>
-            <span className="navbar-text">
-                <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/bchan26/" target="_blank"><img src={navIcon1} alt=""/></a>
-                </div>
+            {/* Navbar Content if/when Collapse AKA dropdown*/}
+            <Navbar.Collapse id="basic-navbar-nav">
 
-                <button className="contactButton" onClick={() =>
-                window.location = 'mailto:bchan26@bu.edu'}>
-                    BChan26@bu.edu
-                </button>
+                <Nav className="me-auto">
+                    <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('home')}>Home</Nav.Link>
 
+                    <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('skills')}> Skills </Nav.Link>
 
-            </span>
-        </Navbar.Collapse>
+                    <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                </Nav>
+            
+                <span className="navbar-text">
+                    <div className="social-icon">
+                        <a href="https://www.linkedin.com/in/bchan26/" target="_blank"><img src={navIcon1} alt=""/></a>
+                    </div>
+
+                    <button className="contactButton" onClick={() =>
+                    window.location = 'mailto:bchan26@bu.edu'}>
+                        BChan26@bu.edu
+                    </button>
+                </span>
+
+            </Navbar.Collapse>
         </Container>
     </Navbar>
 );

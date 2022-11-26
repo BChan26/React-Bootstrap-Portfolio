@@ -1,26 +1,31 @@
-/*Custom Fonts*/
+/*Custom Font*/
 @font-face {
   font-family: Centra;
   src: url ('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
+
+/*Custom Font*/
 @font-face {
   font-family: Centra;
   src: url ('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 700;
 }
+
+/*Custom Font*/
 @font-face {
   font-family: Centra;
   src: url ('./assets/font/CentraNo2-Book.ttf');
   font-weight: 700;
 }
 
-/*Default Css*/
+/*Global Customization for HTML*/
 html {
 scroll-behavior: smooth;
 scroll-padding-top: 5px;
 }
 
+/*Global Customization for Body of Page*/
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -30,6 +35,7 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
+/*Headers 1-6 */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -37,6 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Navigation Bar*/
+
+/*Navbar fixed at top with full width, always visible*/
 nav.navbar {
 padding: 18px;
 position: fixed;
@@ -46,15 +54,18 @@ z-index: 9999;
 transition: 0.32 ease-in-out;
 }
 
+/*Background color of navbar as you scroll down*/
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #1f1f1f;
 }
 
-nav.navbar a.navbar-brane {
+/*Navbar Logo*/
+nav.navbar a.navbar-brand {
   width: 9%;
 }
 
+/*Customizing the navbar links at the top*/
 nav.navbar .navbar-nav .nav-link.navbar-link {
 font-weight: 400;
 color: #fff !important;
@@ -64,59 +75,69 @@ font-size: 18px;
 opacity: 0.75;
 }
 
+/*Opacity changes when we're hovering or active on navbar*/
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover, 
 nav.navbar .navbar-nav a.nav-link.navbar-link:active {
   opacity: 1;
+  color: #78c043 !important;
 }
 
+/*Centering NavBar Text*/
 span.navbar-text {
   display: flex;
   align-items: center;
 }
 
+/*Beginning of Social Media Icon*/
 .social-icon {
 display: inline-block;
 margin-left: 14px;
 }
 
+/*Social Media Starting*/
 .social-icon a {
   width: 42px;
   height: 42px;
-  background:rgba(217,217,217,0.1);
+  color: transparent;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgba(255,255,255,0.5)
+  border: 1px solid #fff
 }
 
+/*Social Media Icon Transformation*/
 .social-icon a::before {
   content: "";
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #ffffff;
+  background: linear-gradient(90.21deg, #192e5b -5.91%, #78c043 111.58%);
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
 }
 
+/*Upon Hover Size Changes*/
 .social-icon a:hover::before {
   transform: scale(1);
 }
 
+/*Social Media Icon "New" Image*/
 .social-icon a img {
   width: 40%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
 
+/*Hover Qualities*/
 .social-icon a:hover img{
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
+/*For the Contact Email - Starting*/
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -129,26 +150,30 @@ margin-left: 14px;
   transition: 0.3s ease-in-out;
 }
 
+/*Size/Span*/
 .navbar-text button span {
   z-index: 1;
 }
 
+/*Contact Email Button Transformation*/
 .navbar-text button::before {
   content: "";
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background: linear-gradient(90.21deg, #192e5b -5.91%, #78c043 111.58%);
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 
+/*New Color Text Upon Hover*/
 .navbar-text button:hover {
   color: #121212;
 }
 
+/*Text Upon Hover*/
 .navbar-text button:hover::before {
 content: "";
 width: 100%;
@@ -156,12 +181,16 @@ height: 100%;
 position: absolute;
 }
 
+/*Mechanics for Toggled Navbar When Needed For Mobile*/
+
+/*Hide Outline/Box Shadow When Toggle Appears (AKA transparent)*/
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
 
+/*For Mobile Toggled Icon*/
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
@@ -172,10 +201,11 @@ nav.navbar .navbar-toggler-icon {
   top: -2px;
 }
 
-nav.navbar .navbar-toggler-icon:focus {
+/* nav.navbar .navbar-toggler-icon:focus {
   border-bottom: 2px solid #fff;
-}
+} */
 
+/*Customization of toggler-icon before/after, keeps it consistent*/
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
   width: 24px;
@@ -189,11 +219,13 @@ nav.navbar .navbar-toggler-icon:before {
   transition: all 300ms linear;
 }
 
+/*Customization for After Needed*/
 nav.navbar .navbar-toggler-icon:after{
   top: 8px;
 }
 
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler0icon:after{
+
+/* nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after{
   transform: rotate(45deg);
   background-color: #fff;
   height: 2px;
@@ -203,19 +235,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
   transform:translateY(8px) rotate(-45deg);
   background-color: #fff;
   height:2px;
-}
+} */
 
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+/* nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
-}
+} */
 
-/*Banner*/
-.banner, .skills {
+
+
+
+/*Banner Section*/
+.banner {
   margin-top: 0;
-  padding: 140px 0px 80px 0px;
+  padding: 250px 0px 80px 0px;
   background-image: url('./assets/img/Boston.jpg');
-
-
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -254,18 +287,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner #DBoat {
+  border-radius: 5px;
   animation: leftright 5s linear infinite;
   width: 50%;
   height: auto;
+  padding: 0px 0px 10px 0px;
 }
 
+@keyframes leftright {
+  0% {
+    transform: translateX(-40px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(-40px);
+  }
+}
 
+.skills {
+  margin-top: 0;
+  padding: 200px 0px 0px 0px;
+  background-image: url('./assets/img/Boston.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 #AllItems {
   display: flex;
   flex-direction:row;
   justify-content:space-evenly;
-
 }
 
 #languages, #frameworksAndLibraries, #tools {
@@ -276,6 +330,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 #languagesImages, #frameworksLibraries,#developerTools {
   height: 30%;
   width: auto;
+  padding: 0px 0px 30px 0px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -293,50 +348,162 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   }
 
-@keyframes leftright {
-  0% {
-    transform: translateX(-40px);
-  }
-  50% {
-    transform: translateX(40px);
-  }
-  100% {
-    transform: translateX(-40px);
-  }
-}
-
-.txt-rotate > .wrap {
+/* .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 .App {
   text-align: center;
 }
+
+.projects {
+  margin-top: 0;
+  padding: 0px 0px 0px 0px;
+  background-image: url('./assets/img/Boston.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/********************************Projects Content Below****************/
+.projects {
+  padding: 0px;
+  position: relative;
+  background-color: black;
+}
+.projects h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.projects p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+/******************NavBar Customization*****************/
+
+/*buttons*/
+.projects .nav.nav-pills {
+  /* display:flex;
+  flex-direction:column; */
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+
+/*button width*/
+.projects .nav.nav-pills .nav-item {
+  width: 33.33%;
+  min-width: 30%;
+}
+
+/*buttons before click*/
+.projects .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+/*buttons after click*/
+.projects .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #192e5b -5.91%, #78c043 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.projects .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+.projects .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+
+
+/*********Tab Image Customization***********/
+.proj-imgbx {
+  position: relative;
+  overflow: hidden;
+}
+
+.proj-images {
+  width: 50%;
+  height: 50%;
+}
+
+/* .proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #192e5b -5.91%, #78c043 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 50%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+} */
+
+
+/*Hovering Colored Text Description Styling*/
+/* .proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+} */

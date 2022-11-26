@@ -1,4 +1,5 @@
 import {Container, Row, Col} from "react-bootstrap"
+
 import CodingLanguages from '../assets/img/CodingLanguages.png'
 import FrameworksLibraries from '../assets/img/FrameworksLibraries.png'
 import DeveloperTools from '../assets/img/DeveloperTools.png'
@@ -9,10 +10,6 @@ export const Skills = () => {
             <Container>
                 <Row className="row-skills">
                     <Col>
-                        {/* <div className="skill-bx">
-                            <h2>Skills</h2>
-                        </div> */}
-
                         <div id="AllItems">
 
                             <div id="languages">

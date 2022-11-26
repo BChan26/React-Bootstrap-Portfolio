@@ -282,13 +282,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 
 .banner img {
   border-radius: 25%;
-  width: 50%;
+  width: 65%;
   height: auto;
 }
 
 .banner #DBoat {
   border-radius: 5px;
-  animation: leftright 5s linear infinite;
+  animation: leftright 8s linear infinite;
   width: 50%;
   height: auto;
   padding: 0px 0px 10px 0px;

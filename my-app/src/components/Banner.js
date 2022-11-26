@@ -1,7 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap"
 
 import BChanScience from '../assets/img/BChanScience.jpg'
-import DBoat from '../assets/img/DBoat.JPG'
+import DBoat from '../assets/img/DBoat.png'
 
 export const Banner = () => {
 return (

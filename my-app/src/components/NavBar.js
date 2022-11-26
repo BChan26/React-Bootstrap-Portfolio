@@ -61,7 +61,7 @@ const onUpdateActiveLink = (value) => {
             
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="https://www.linkedin.com/in/bchan26/" target="_blank"><img src={navIcon1} alt=""/></a>
+                        <a href="https://www.linkedin.com/in/bchan26/" target="_blank" rel="noreferrer"><img src={navIcon1} alt=""/></a>
                     </div>
 
                     <button className="contactButton" onClick={() =>

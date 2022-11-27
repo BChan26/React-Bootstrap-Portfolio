@@ -308,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 
 .skills {
   margin-top: 0;
-  padding: 200px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
   background-image: url('./assets/img/Boston.jpg');
   background-position: top center;
   background-size: cover;
@@ -334,19 +334,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 }
 
 @media screen and (max-width: 1200px) {
-  #AllItems {
+
+.allSkillsContent, .row-skills, #AllItems {
     display: flex;
-    flex-direction: column;
+    flex-wrap:wrap;
+    flex-direction: row;
     text-align: center;
     justify-content:center;
     max-width: 100%;
       }
 
   #languagesImages, #frameworksLibraries,#developerTools {
-    max-height: 30%;
-    max-width: 40%;
+    height: 60%;
+    width: auto;
   }
   }
+
+@media screen and (max-width: 800px) {
+  .projects .nav.nav-pills ,  .projects .nav.nav-pills .nav-item {
+    width: 50%;
+    min-width: 500%;
+  }
+}
+
 
 /* .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
@@ -358,7 +368,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 
 .projects {
   margin-top: 0;
-  padding: 0px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   background-image: url('./assets/img/Boston.jpg');
   background-position: top center;
   background-size: cover;
@@ -369,7 +379,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 
 /********************************Projects Content Below****************/
 .projects {
-  padding: 0px;
   position: relative;
   background-color: black;
 }
@@ -394,7 +403,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 .projects .nav.nav-pills {
   /* display:flex;
   flex-direction:column; */
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   border-radius: 0px;
   background-color: rgb(255 255 255 / 10%);
@@ -462,8 +471,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 }
 
 .proj-images {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: auto;
 }
 
 /* .proj-imgbx::before {

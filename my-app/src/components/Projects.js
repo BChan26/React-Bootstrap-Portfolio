@@ -52,7 +52,7 @@ return (
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Your Weather Forecast
+                            <Nav.Link eventKey="second">Weather Forecast
                             <h6>↓</h6>
                             <h6>HTML, CSS, Javascript</h6>
                             </Nav.Link>

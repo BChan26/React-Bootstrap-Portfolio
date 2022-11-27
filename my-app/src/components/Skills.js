@@ -7,7 +7,7 @@ import DeveloperTools from '../assets/img/DeveloperTools.png'
 export const Skills = () => {
     return (
         <section className="skills" id="skills">
-            <Container>
+            <Container className = "allSkillsContent">
                 <Row className="row-skills">
                     <Col>
                         <div id="AllItems">

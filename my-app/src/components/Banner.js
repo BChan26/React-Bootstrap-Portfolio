@@ -15,7 +15,7 @@ return (
                     {/* <h4>Science Teacher</h4>
                     <h4>Sports Coach</h4> */}
 
-                    <p>As a software engineer who teaches middle school science, I firmly believe in lifelong learning and supporting my community. Whether it's coding, coaching, or parent-teacher conferences, I approach challenges with an empathetic lens: problem solve, reiterate, and adapt to support growth and effect change.</p>
+                    <p>As a software engineer who teaches middle school science, I firmly believe in lifelong learning and supporting my community. Whether it's coaching, coding, or parent-teacher conferences, I approach challenges with an empathetic lens: problem solve, reiterate, and adapt to support growth and effect change.</p>
                     <img src={DBoat}  id="DBoat" alt="Dragonboat"/>
                 </Col>
 

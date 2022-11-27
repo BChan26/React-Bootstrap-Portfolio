@@ -15,7 +15,7 @@ const project1 =[
         // title: "Weather Forecast",
         // description: "HTML, CSS, Javascript, APIs",
         imgURL: Forecast,
-        URL: 'https://65bus.netlify.app'
+        URL: 'https://your-weather-forecast.surge.sh'
     }]
 
 const project2 =[
@@ -31,7 +31,7 @@ const project3 =[
         // title: "MBTA 65 Bus Tracker",
         // description: "React + Axios Calls",
         imgURL: The65Bus,
-        URL: 'https://your-weather-forecast.surge.sh'
+        URL: 'https://65bus.netlify.app'
     }]
 
 return (

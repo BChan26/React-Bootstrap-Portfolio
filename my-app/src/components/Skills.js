@@ -23,7 +23,7 @@ export const Skills = () => {
                             <div id="frameworksAndLibraries">
                                 <h4>Frameworks & Libraries</h4>
                                 <h6>React, Express, Sequelize,</h6>
-                                <h6>Vue.js, Django</h6>
+                                {/* <h6>Vue.js, Django</h6> */}
                                 <img id="frameworksLibraries" src={FrameworksLibraries} alt="Frameworks and Libraries"/>
                             </div>
 

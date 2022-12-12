@@ -28,9 +28,9 @@ export const Skills = () => {
                             </div>
 
                             <div id="tools">
-                                <h4>Developer Tools</h4>
-                                <h6>Node.js, VSCode,</h6>
-                                <h6>Git, Github</h6>
+                                <h4>Developer Tools & Systems</h4>
+                                <h6>PostgreSQL, Node.js, Git,</h6>
+                                <h6>VSCode, Github, Wordpress</h6>
                                 <img id="developerTools"  src={DeveloperTools} alt="Developer Tools"/>
                             </div>
 

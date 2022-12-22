@@ -423,6 +423,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
+  border: 0.25px solid #f7f7ff;
   color: #bdd5ea;
   width: 100%;
   font-size: 17px;

@@ -3,7 +3,7 @@ import Boston1 from '../assets/img/Boston1.png'
 import The65Bus from '../assets/img/The65Bus.png'
 import Hollygram from '../assets/img/Hollygram.png'
 import TickIt from '../assets/img/TickIt.png'
-import ComingSoon from '../assets/img/ComingSoon.png'
+import TeacherTracker from '../assets/img/TeacherTracker.png'
 import {ProjectCard} from './ProjectCard'
 
 
@@ -53,7 +53,7 @@ const project5 =[
 
 const project6 =[
     {
-        imgURL: ComingSoon,
+        imgURL: TeacherTracker,
         // URL: ''
     }]
 

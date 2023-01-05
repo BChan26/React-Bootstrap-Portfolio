@@ -98,7 +98,7 @@ return (
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link eventKey="fifth">Hackathon Project
+                            <Nav.Link eventKey="fifth">Hackathon Group Project
                             <h6>↓</h6>
                             <h6>Python & Django w/ Auth</h6>
                             </Nav.Link>
@@ -107,7 +107,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="sixth">Teacher Documentation Tool
                             <h6>↓</h6>
-                            <h6>Completed by January 6th, 2023</h6>
+                            <h6>Python & Django w/ Flowbite React</h6>
                             </Nav.Link>
                         </Nav.Item>
 

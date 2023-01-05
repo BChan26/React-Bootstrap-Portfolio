@@ -70,7 +70,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="first">Holiday Instagram
                             <h6>↓</h6>
-                            <h6>PERN Full-Stack</h6>
+                            <h6>PERN Full-Stack App</h6>
                             </Nav.Link>
                             
                         </Nav.Item>
@@ -107,7 +107,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="sixth">Teacher Documentation Tool
                             <h6>↓</h6>
-                            <h6>Full-Stack w/ Python & Django & Flowbite React</h6>
+                            <h6>Full-Stack w/ Flowbite, Python, Django</h6>
                             </Nav.Link>
                         </Nav.Item>
 

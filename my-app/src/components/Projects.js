@@ -48,13 +48,13 @@ const project4 =[
 const project5 =[
     {
         imgURL: TickIt,
-        // URL: ''
+        URL: 'https://the-tick-it.netlify.app/'
     }]
 
 const project6 =[
     {
         imgURL: TeacherTracker,
-        // URL: ''
+        URL: 'https://teachertracker.netlify.app/'
     }]
 
 return (
@@ -68,17 +68,31 @@ return (
                         <Nav variant="pills" defaultActiveKey="/home">
                         
                         <Nav.Item>
+                            <Nav.Link eventKey="sixth">Teacher Documentation Tool
+                            <h6>↓</h6>
+                            <h7>Full-Stack App (Python, Django, Flowbite React) </h7>
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
                             <Nav.Link eventKey="first">Holiday Instagram
                             <h6>↓</h6>
-                            <h6>PERN Full-Stack App</h6>
+                            <h7>Full-Stack App (Postgres, Express, React, Node)</h7>
                             </Nav.Link>
                             
                         </Nav.Item>
                         
                         <Nav.Item>
+                            <Nav.Link eventKey="fifth">Hackathon Group Project
+                            <h6>↓</h6>
+                            <h7>Full-Stack App (Python, Django, React w/ Auth)</h7>
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
                             <Nav.Link eventKey="second">MBTA 65 Bus Tracker
                             <h6>↓</h6>
-                            <h6>React w/ Axios Calls</h6>
+                            <h7>React w/ API Calls</h7>
                             </Nav.Link>
                             
                         </Nav.Item>
@@ -86,30 +100,18 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="third">Weather Forecast
                             <h6>↓</h6>
-                            <h6>HTML, CSS, Javascript</h6>
+                            <h7>HTML, CSS, Javascript</h7>
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
                             <Nav.Link eventKey="fourth">Boston1 Dragon Boat
                             <h6>↓</h6>
-                            <h6>WordPress</h6>
+                            <h7>WordPress</h7>
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
-                            <Nav.Link eventKey="fifth">Hackathon Group Project
-                            <h6>↓</h6>
-                            <h6>Python & Django w/ Auth</h6>
-                            </Nav.Link>
-                        </Nav.Item>
 
-                        <Nav.Item>
-                            <Nav.Link eventKey="sixth">Teacher Documentation Tool
-                            <h6>↓</h6>
-                            <h6>Full-Stack w/ Flowbite, Python, Django</h6>
-                            </Nav.Link>
-                        </Nav.Item>
 
                         </Nav>
 

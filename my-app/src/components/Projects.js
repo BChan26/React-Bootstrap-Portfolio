@@ -42,7 +42,7 @@ const project4 =[
         // title: "Holiday Instagram Clone",
         // description: "PERN Full Stack w/ CRUD & Auth",
         imgURL: Hollygram,
-        URL: 'https://hollygram.netlify.app/'
+        URL: 'https://hollygram-heroku.netlify.app/'
     }]
 
 const project5 =[

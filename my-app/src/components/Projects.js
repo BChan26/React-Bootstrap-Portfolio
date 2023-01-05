@@ -107,7 +107,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="sixth">Teacher Documentation Tool
                             <h6>↓</h6>
-                            <h6>Python & Django w/ Flowbite React</h6>
+                            <h6>Full-Stack w/ Python & Django & Flowbite React</h6>
                             </Nav.Link>
                         </Nav.Item>
 

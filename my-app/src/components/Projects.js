@@ -70,16 +70,16 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="sixth">Teacher Documentation Tool
                             <h6>↓</h6>
-                            <h7>Full-Stack App </h7>
-                            <h7>(Python, Django, Flowbite React, Tailwind) </h7>
+                            <h6>Full-Stack App </h6>
+                            <h6>(Python, Django, Flowbite React, Tailwind) </h6>
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
                             <Nav.Link eventKey="first">Holiday Instagram
                             <h6>↓</h6>
-                            <h7>Full-Stack App</h7>
-                            <h7>(Postgres, Express, React, Node)</h7>
+                            <h6>Full-Stack App</h6>
+                            <h6>(Postgres, Express, React, Node)</h6>
                             </Nav.Link>
                             
                         </Nav.Item>
@@ -87,8 +87,8 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="fifth">Hackathon Group Project
                             <h6>↓</h6>
-                            <h7>Full-Stack Ticket App</h7>
-                            <h7>(Python, Django, React w/ Authentication)</h7>
+                            <h6>Full-Stack Ticket App</h6>
+                            <h6>(Python, Django, React w/ Authentication)</h6>
                             </Nav.Link>
                         </Nav.Item>
 
@@ -96,7 +96,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="second">MBTA 65 Bus Tracker
                             <h6>↓</h6>
-                            <h7>React w/ API Calls</h7>
+                            <h6>React w/ API Calls</h6>
                             </Nav.Link>
                             
                         </Nav.Item>
@@ -104,14 +104,14 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="third">Weather Forecast
                             <h6>↓</h6>
-                            <h7>HTML, CSS, Javascript</h7>
+                            <h6>HTML, CSS, Javascript</h6>
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
                             <Nav.Link eventKey="fourth">Boston1 Dragon Boat
                             <h6>↓</h6>
-                            <h7>WordPress</h7>
+                            <h6>WordPress</h6>
                             </Nav.Link>
                         </Nav.Item>
 

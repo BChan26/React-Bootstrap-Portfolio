@@ -70,24 +70,28 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="sixth">Teacher Documentation Tool
                             <h6>↓</h6>
-                            <h7>Full-Stack App (Python, Django, Flowbite React) </h7>
+                            <h7>Full-Stack App </h7>
+                            <h7>(Python, Django, Flowbite React, Tailwind) </h7>
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
                             <Nav.Link eventKey="first">Holiday Instagram
                             <h6>↓</h6>
-                            <h7>Full-Stack App (Postgres, Express, React, Node)</h7>
+                            <h7>Full-Stack App</h7>
+                            <h7>(Postgres, Express, React, Node)</h7>
                             </Nav.Link>
                             
                         </Nav.Item>
-                        
+
                         <Nav.Item>
                             <Nav.Link eventKey="fifth">Hackathon Group Project
                             <h6>↓</h6>
-                            <h7>Full-Stack App (Python, Django, React w/ Auth)</h7>
+                            <h7>Full-Stack Ticket App</h7>
+                            <h7>(Python, Django, React w/ Authentication)</h7>
                             </Nav.Link>
                         </Nav.Item>
+
 
                         <Nav.Item>
                             <Nav.Link eventKey="second">MBTA 65 Bus Tracker

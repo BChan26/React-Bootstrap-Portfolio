@@ -68,9 +68,9 @@ return (
                         <Nav variant="pills" defaultActiveKey="/home">
                         
                         <Nav.Item>
-                            <Nav.Link eventKey="sixth">Teacher Documentation Tool
+                            <Nav.Link eventKey="sixth">Teacher Tracker Tool
                             <h6>↓</h6>
-                            <h6>Full-Stack App </h6>
+                            <h6>Full-Stack Documentation App </h6>
                             <h6>(Python, Django, Flowbite React, Tailwind) </h6>
                             </Nav.Link>
                         </Nav.Item>
@@ -78,7 +78,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="first">Holiday Instagram
                             <h6>↓</h6>
-                            <h6>Full-Stack App</h6>
+                            <h6>Full-Stack Social Media App</h6>
                             <h6>(Postgres, Express, React, Node)</h6>
                             </Nav.Link>
                             
@@ -111,7 +111,7 @@ return (
                         <Nav.Item>
                             <Nav.Link eventKey="fourth">Boston1 Dragon Boat
                             <h6>↓</h6>
-                            <h6>WordPress</h6>
+                            <h6>WordPress w/ CSS</h6>
                             </Nav.Link>
                         </Nav.Item>
 

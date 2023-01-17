@@ -15,7 +15,7 @@ return (
                     {/* <h4>Science Teacher</h4>
                     <h4>Sports Coach</h4> */}
 
-                    <p>As a software engineer and coach with a background in teaching science, my professional experience has enabled me to educate, communicate, organize, and lead teams by identifying problems and facilitating a structured workflow to execute against goals. I have the technical skills to develop and deploy full-stack web applications to create products that improve a person’s quality of life.</p>
+                    <p>As a software engineer and sports coach with a background in teaching science, my professional experience has enabled me to educate, communicate, organize, and lead teams by identifying problems and facilitating a structured workflow to execute against goals. I have the technical skills to develop and deploy full-stack web applications to create products that improve a person’s quality of life.</p>
                     <img src={DBoat}  id="DBoat" alt="Dragonboat"/>
                 </Col>
 

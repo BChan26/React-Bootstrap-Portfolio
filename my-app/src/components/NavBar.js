@@ -39,7 +39,7 @@ const onUpdateActiveLink = (value) => {
 
             {/* Logo */}
             <Navbar.Brand href="#home">
-                    <img src={BCLogo} className="BCLogo" alt="BC Logo Template Created By Garis Pena from https://www.vecteezy.com/"/>
+                    <img src={BCLogo} className="BCLogo" alt="BC Logo Template Created By Garis Pena from https://www.vecteezy.com/ and Template from Youtube's Webdecoded"/>
             </Navbar.Brand>
 
             {/* NavBarToggle for Mobile*/}
@@ -64,10 +64,12 @@ const onUpdateActiveLink = (value) => {
                         <a href="https://www.linkedin.com/in/bchan26/" target="_blank" rel="noreferrer"><img src={navIcon1} alt=""/></a>
                     </div>
 
-                    <button className="contactButton" onClick={() =>
-                    location.href='https://drive.google.com/file/d/1HmdCw3XEHKRmio977CZvELNn6dE17V5r/view?usp=sharing'}>
+                    
+                    <a href="https://drive.google.com/file/d/1HmdCw3XEHKRmio977CZvELNn6dE17V5r/view?usp=sharing" target="_blank" rel="noreferrer">
+                    <button className="contactButton">
                         Resume
                     </button>
+                    </a>
 
                     <button className="contactButton" onClick={() =>
                     window.location = 'mailto:bchan26@bu.edu'}>

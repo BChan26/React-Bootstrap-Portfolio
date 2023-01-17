@@ -65,7 +65,7 @@ const onUpdateActiveLink = (value) => {
                     </div>
 
                     <button className="contactButton" onClick={() =>
-                    window.open('drive.google.com/drive/u/1/folders/1JKEzKQ6G-PhF3CYwZ0QG_JBD9d7C6YyF', '_blank')}>
+                    window.open('https://drive.google.com/file/d/1HmdCw3XEHKRmio977CZvELNn6dE17V5r/view?usp=sharing', '_blank')}>
                         Resume
                     </button>
 
